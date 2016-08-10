@@ -1,4 +1,4 @@
-# panlex-error-correction
+# PanLex Error Correction Stuff
 
 This repo contains various Python script that are useful for processing expression lists into candidates for error correction.
 
@@ -32,4 +32,9 @@ This script takes a list of potentially erroneous expressions and creates a .tsv
 ```
 
  - Input: ???
- - Output: a db-ready .tsv
+ - Output: a db-ready .ts
+
+## confusables/
+
+Directory full of lists of characters that are easily confusable. The delimiter in these files are triple semicolons ';;;', although in retrospect it may have been better to use tabs. It kind of depends on whether tabs ever appear in PanLex expressions. I don't think they do, but I don't know, I could be wrong.
+
