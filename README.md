@@ -19,7 +19,7 @@ Here's a handy way to get a list of all Arabic expressions from the PanLex datab
 
 ### editdist.py
 
-This script detects pairs of expressions that are within some edit distance of each other. It's a long-running script, as you might imagine.
+This script detects pairs of expressions that are within some edit distance of each other. The naive version of this problem is polynomial in the size of the expression list, which is really big for English. But it's probably tractable for some of our smaller languages. And if we're clever, we could probably come up with a an algorithm that's tractable for English.
 
  - Input: a simple list of expressions.
  - Output: ???
@@ -54,5 +54,5 @@ For a different language, set 'lv' to an integer other than 1627. (English is 18
 
 ### confusables/
 
-Directory full of lists of characters that are easily confusable. The delimiter in these files are triple semicolons ';;;', although in retrospect it may have been better to use tabs. It kind of depends on whether tabs ever appear in PanLex expressions. I don't think they do, but I don't know, I could be wrong.
+Directory full of lists of characters that are easily confusable. The delimiter in these files are triple semicolons ';;;', although it'd probably be more elegant to use TABs instead.
 
